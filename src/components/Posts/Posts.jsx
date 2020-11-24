@@ -1,4 +1,4 @@
-import { Grid, Grow, Typography } from "@material-ui/core";
+import { Box, Grid, Grow, Typography } from "@material-ui/core";
 import React from "react";
 import { useSelector } from "react-redux";
 import Post from "./Post/Post";
@@ -7,7 +7,9 @@ function Posts({ setCurrentPost }) {
 
   return (
     <div>
-      <Typography variant="h3">Posts</Typography>
+      <Box my={3}>
+        <Typography variant="h3">Posts</Typography>
+      </Box>
       <Grid container spacing={2} alignItems="center">
         {posts.map((post) => (
           <Grow key={post._id} in>
