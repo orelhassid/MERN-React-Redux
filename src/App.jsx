@@ -19,6 +19,7 @@ function App() {
         currentPost={currentPost}
       />
       <Posts setCurrentPost={setCurrentPost} />
+      <footer>This is Footer</footer>
     </div>
   );
 }
