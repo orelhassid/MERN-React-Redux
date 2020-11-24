@@ -1,3 +1,4 @@
+import { Typography } from "@material-ui/core";
 import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { getPosts } from "./actions/posts";
@@ -19,7 +20,9 @@ function App() {
         currentPost={currentPost}
       />
       <Posts setCurrentPost={setCurrentPost} />
-      <footer>This is Footer</footer>
+      <footer>
+        <Typography>This is Footer</Typography>
+      </footer>
     </div>
   );
 }
